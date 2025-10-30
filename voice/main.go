@@ -25,10 +25,13 @@ import (
 	"slices"
 	"syscall"
 
+	"github.com/joho/godotenv"
 	"github.com/nlpodyssey/openai-agents-go/agents"
 )
 
 func main() {
+	_ = godotenv.Load()
+
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 

@@ -4,6 +4,7 @@ go 1.25
 
 require (
 	github.com/gordonklaus/portaudio v0.0.0-20250206071425-98a94950218b
+	github.com/joho/godotenv v1.5.1
 	github.com/nlpodyssey/openai-agents-go v0.1.0
 	github.com/openai/openai-go/v2 v2.5.0
 )
